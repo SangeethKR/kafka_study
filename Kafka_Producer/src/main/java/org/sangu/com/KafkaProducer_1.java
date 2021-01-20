@@ -24,7 +24,7 @@ public class KafkaProducer_1 {
         KafkaProducer<String, String> producer = new KafkaProducer<String, String>(props);
 
         /*create a producer record*/
-        ProducerRecord<String, String> record = new ProducerRecord<String, String>(topicname,"1", "Atreyee");
+        ProducerRecord<String, String> record = new ProducerRecord<String, String>(topicname,"1", "Message1");
 
         /*Send the record*/
         producer.send(record);
